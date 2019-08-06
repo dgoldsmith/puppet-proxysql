@@ -1,0 +1,11 @@
+# lookup.yaml - lookup rules for data from hiera
+---
+
+lookup_options:
+  proxysql::admin_password:
+    convert_to: Sensitive
+  proxysql::monitor_password:
+    convert_to: Sensitive
+  proxysql::cluster_password:
+    convert_to: Sensitive
+  
